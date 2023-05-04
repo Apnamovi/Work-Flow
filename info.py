@@ -12,8 +12,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'LazyPrincess')
-API_ID = int(environ.get('API_ID', '26461352'))
-API_HASH = environ.get('API_HASH', 'ab9cc32776ada8335852b50cd96bb8c6')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 #Port
@@ -45,8 +45,8 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Apnamovie4')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>Title:</b> <code>{file_caption}</code> <a herf=https://t.me/Moviesadda24_7s>♥️ Movies Adda ♥️</a> \n\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n👉 <b>Join Now : <a herf=https://t.me/Moviesadda24_7s>♥️ Movies Adda ♥️</a></b>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>Title:</b> <code>{file_caption}</code> <a herf=https://t.me/Moviesadda24_7s>♥️ Movies Adda ♥️</a> \n\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n👉 <b>Join Now : <a herf=https://t.me/Moviesadda24_7s>♥️ Movies Adda ♥️</a></b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>Title:</b> <code>{file_caption}</code> <a herf=https://t.me/Movies>♥️ Movies Adda ♥️</a> \n\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n👉 <b>Join Now : <a herf=https://t.me/Movie>♥️ Movies Adda ♥️</a></b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b>Title:</b> <code>{file_caption}</code> <a herf=https://t.me/Movi>♥️ Movies Adda ♥️</a> \n\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n👉 <b>Join Now : <a herf=https://t.me/Movies>♥️ Movies Adda ♥️</a></b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌IMDb: \n\n🏷 Title: {title}\n🌟 Rating : {rating}/10\n🎭 Genres: {genres}\n📆 Year: {year}\n⏰ Duration : {runtime}\n🎙️ Languages : {languages}\n🔖 Plot : {plot}\n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
